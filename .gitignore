@@ -1,0 +1,5 @@
+# Ignore the Data Folder
+/data
+
+# Ignore all *.csv
+/notebook/*.csv
