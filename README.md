@@ -36,7 +36,7 @@ https://www.kaggle.com/crowdflower/twitter-airline-sentiment
 
 # 4. Training Emotional Sage to Detect Emotions and Text Pre-processing
 
-The 'Twitter US Airline Sentiment' data set is used to train a Multinomial Naive Bayes Classifier. The data set contains 14,640 Tweets. The tweets are labelled as "negative", "neutral", and "positive". The "neutral" tweets have been removed and the remaining tweets have been undersampled relative to the "positive" labels, leaving 6,250 tweets to be used for training, validation, and testing the model.
+The 'Twitter US Airline Sentiment' data set is used to train a Multinomial Naive Bayes Classifier. The data set contains 14,640 Tweets. The tweets are labelled as "negative", "neutral", and "positive". The "neutral" tweets have been removed and the remaining tweets have been under-sampled relative to the "positive" labels, leaving 6,250 tweets to be used for training, validation, and testing the model.
 
 The Tweets are then pre-processed before training the classifier using the following techniques:
 * Tokenization
@@ -45,7 +45,7 @@ The Tweets are then pre-processed before training the classifier using the follo
 * Bag of Words Creation
 * TF-IDF (Term Frequency - Inverse Document Frequency)
 
-A Naive Bayes Classifier using a Multinomial distribution is trained to 82.2 % accuracy on the 'Twitter US Airline Sentiment' data set. This provieds Emotional Sage with the ability to determine the sentiment of Tweets.
+A Naive Bayes Classifier using a Multinomial distribution is trained to 82.2 % accuracy on the 'Twitter US Airline Sentiment' data set. This provides Emotional Sage with the ability to determine the sentiment of Tweets.
 
 # 6. Exploratory Data Analysis
 
