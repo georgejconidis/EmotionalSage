@@ -47,7 +47,7 @@ The Tweets are then pre-processed before training the classifier using the follo
 
 A Naive Bayes Classifier using a Multinomial distribution is trained to 82.2 % accuracy on the 'Twitter US Airline Sentiment' data set. This provides Emotional Sage with the ability to determine the sentiment of Tweets.
 
-Here is an example of a Twitter Conversation which is emotionally classified by Emotional Sage. The Customer is plotted in <span style="color:aqua">blue</span> and the customer service agent in <span style="color:lightgreen">green</span>.
+<!-- Here is an example of a Twitter Conversation which is emotionally classified by Emotional Sage. The Customer is plotted in <span style="color:aqua">blue</span> and the customer service agent in <span style="color:lightgreen">green</span>. -->
 
 <!-- ![This is an example of a Twitter Conversation: Emotional Sentiment vs. Tweet Number in Chronological Order](/home/george/Documents/Insight_DS_TO20A/Projects/EmotionalDetection/data/raw/Preliminary_AgentCustomer_Emotional_Output.png)
 **This is an example of a Twitter Conversation: Emotional Sentiment vs. Tweet Number in Chronological Order** -->
