@@ -16,7 +16,7 @@
 5. ### Credits
 
 
-# 1. Motivation
+# 1. Motivation:
 
 Live Chat has become a popular way for companies to reach their customers needs. In the text environment, such as Live Chat, the customer service agent is left to discern the emotional state of the conversation based on previous experience with text message conversations. In contrast, a phone or in-person conversation would allow a customer service agent to determine the emotional state of the costumer with greater confidence via speech tonality and body language, respectively. So it is clear that the Live Chat customer service agent is not afforded an equal footing to gauge how the conversation with a customer is going, and hence may be vulnerable to having more conversations end negatively for a customer.
 
