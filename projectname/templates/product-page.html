@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<style>
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+</style>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+      <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  </head>
+  <body>
+
+    <!-- <center>
+     <img class="masthead-avatar mb-5" src="https://get.pxhere.com/photo/subscribe-twitter-account-address-browser-business-retweet-post-communication-computer-digital-editorial-internet-media-profile-followers-share-social-comments-technology-follow-upload-ads-friend-sky-daytime-hand-wing-computer-wallpaper-finger-font-bird-graphics-energy-beak-logo-illustration-1445839.jpg" alt=""width=400 height=500>
+    </center> -->
+
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <center>
+             <img class="masthead-avatar mb-5" src="https://get.pxhere.com/photo/subscribe-twitter-account-address-browser-business-retweet-post-communication-computer-digital-editorial-internet-media-profile-followers-share-social-comments-technology-follow-upload-ads-friend-sky-daytime-hand-wing-computer-wallpaper-finger-font-bird-graphics-energy-beak-logo-illustration-1445839.jpg" alt=""width=400 height=500>
+            </center>
+            <li class="menu-text">Emotional Sage: Feeling Customer Satisfaction</li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <img class="masthead-avatar mb-5" src="https://i1.rgstatic.net/ii/profile.image/279449833623559-1443637440288_Q512/George_Conidis.jpg" alt=""width=400 height=700>
+           </center>
+            <li class="menu-text">Created and Developed By: George James Conidis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+    <br>
+    <!-- You can now combine a row and column if you just need a 12 column row -->
+    <!--
+    <div class="row columns">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li class="disabled">Gene Splicing</li>
+          <li>
+            <span class="show-for-sr">Current: </span> Cloning
+          </li>
+        </ul>
+      </nav>
+    </div>
+    -->
+    <div class="row">
+      <div class="medium-6 columns">
+       <div>
+           <h2 class="text-center text-white">Welcome to the Demo of Emotional Sage</h2>
+           <hr class="star-light mb-5">
+          <!-- <img class="masthead-avatar mb-5" src="./static/img/neighborhood-map-large.gif" alt=""> -->
+          <!-- <center>
+           <img class="masthead-avatar mb-5" src="https://get.pxhere.com/photo/subscribe-twitter-account-address-browser-business-retweet-post-communication-computer-digital-editorial-internet-media-profile-followers-share-social-comments-technology-follow-upload-ads-friend-sky-daytime-hand-wing-computer-wallpaper-finger-font-bird-graphics-energy-beak-logo-illustration-1445839.jpg" alt=""width=400 height=500>
+         </center> -->
+
+<br>
+       </div>
+      </div>
+
+      <div class="medium-6 columns">
+        <section class="bg-primary mb-0" id="try">
+  	    <div class="container">
+    	<h2 class="text-center text-white">Please Try Emotional Sage by Selecting a Conversation!</h2>
+    	<hr class="star-light mb-5">
+          	<!--<div class="col-sm m-3 text-center">-->
+
+                <div class="col-sm m-3">
+                	<form action="/output" method="GET" id="user_input">
+
+
+                        <label for="user_input">Twitter Conversations</label>
+                          <select name="neighborhood">
+                            <option value="BasedText">Please Choose a Conversation</option>
+                              <option value="Resolved">Resolved</option>
+                              <option value="Unresolved">Unresolved</option>
+                          </select>
+
+
+                        <br>
+
+
+
+                    </form>
+          	</div> <!-- end col-sm m-3 -->
+
+      <div class="col-sm m-3 text-center">
+            <button type="submit" class="btn green"
+                    form="user_input"><b>Let us analyze a random conversation of that type!</b></button>
+  	  </div>
+
+        </div> <!-- end container -->
+        </section>
+      </div> <!-- end medium-6 large-5 -->
+    </div> <!-- end row -->
+
+
+
+
+    <div class="row">
+        <div class="medium-6 columns">
+
+      {% if my_form_result=='Empty' %}
+  	     <div class="row mt-4 justify-content-center">
+        	<h4 class="text-danger text-center text-uppercase">Please select a Conversation</h4>
+  	     </div>
+
+  	{% elif my_form_result=='NotEmpty' %}
+
+
+
+      <div class="row mt-4 justify-content-center">
+        <h4 class="text-light text-center text-uppercase">The Twitter Conversation You've Selected <b>{{conv_type}}</b> </h4>
+      </div>
+
+
+	     </div> <!-- end medium-6 large-5 -->
+
+      <div class="medium-6 columns">
+        <!-- <div id="chart">
+       <embed type="image/svg+xml" src= {{ chart|safe }} weight="500" height="500"/>
+        </div> -->
+      </div> <!-- end medium-6 columns-->
+
+    </div> <!-- end row -->
+
+  <div class='row'>
+      <div class='medium-6 columns'>
+      <!-- <h2 class="text-center text-white">Enter Some Text</h2> -->
+        <div id="Sentiment_gif">
+            <!-- <img src="data:image/png;base6, {{ Sentiment_gif }}"> -->
+            <!-- <img src="static, {{ Sentiment_gif }}"> -->
+            <img src="{{ url_for('static', filename = Sentiment_gif) }}" width=500 height=416>
+        </div>
+      <!--<img src="{{ url_for('static', filename = price_importance) }}" width=1000 height=1000>-->
+      <div id="Conversation_Text">
+          <!-- <img src="data:image/png;base6, {{ Sentiment_gif }}"> -->
+          <!-- <img src="static, {{ Sentiment_gif }}"> -->
+          <!-- <img src="{{ url_for('static', filename = conversation_figure) }}" width=500 height=416> -->
+      </div>
+
+      </div>
+
+
+      <div class='medium-6 columns'>
+      <h4 class="text-center text-white">The sentiment and text of the selected conversation</h4>
+        <div id="Sentiment_figure">
+            <!-- <img src="data:image/png;base64, {{ conversation_figure }}"> -->
+            <img src="{{ url_for('static', filename = conversation_figure) }}" width=500 height=416>
+        </div>
+      <!--<img src="{{ url_for('static', filename = tts_importance) }}" width=1000 height=1000>-->
+      </div>
+
+  </div> <!-- end row -->
+
+
+
+    {% else %}
+    {% endif %}
+
+  </body>
+</html>
