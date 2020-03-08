@@ -1,9 +1,9 @@
 # Project Title : Emotional Sage - Feeling Customer Satisfaction
 
-# Tech Summary
+# Tech Summary:
 * #### **Natural Language Processing, Naive Bayes Multinomial Classifier, Text Pre-processing, Term Frequency Inverse Document Frequency (TF-IDF), Optimization**
 
-# Table of Contents
+# Table of Contents:
 1. ### Motivation
 2. ### Description
 3. ### Data Sources
@@ -16,13 +16,13 @@
 5. ### Credits
 
 
-# 1. Motivation
+# 1. Motivation:
 
 Live Chat has become a popular way for companies to reach their customers needs. In the text environment, such as Live Chat, the customer service agent is left to discern the emotional state of the conversation based on previous experience with text message conversations. In contrast, a phone or in-person conversation would allow a customer service agent to determine the emotional state of the costumer with greater confidence via speech tonality and body language, respectively. So it is clear that the Live Chat customer service agent is not afforded an equal footing to gauge how the conversation with a customer is going, and hence may be vulnerable to having more conversations end negatively for a customer.
 
 In recent years, Live Chat has been making use of the instant messaging platform, Twitter. The platform has a huge audience base and companies are able to reach a large fraction of their customers with little effort. The challenge for a company using Twitter, is the comments/conversations are available for the public to view (unless Private Messaging is used). This leads to a company managing the escalation and deescalation of a customer service request in the public eye. This is a uniquely challenging domain to conduct customer service and needs to be handled with as much care and diligence as possible.
 
-# 2. Description
+# 2. Description:
 
 Emotional Sage is a web application tool which helps customer service agents using Twitter to converse with clients. Emotional Sage monitors the real-time emotional state of a conversation and will notify the customer service agent when the conversation will likely be unresolved if measures are not taken.
 
@@ -42,7 +42,6 @@ The Tweets are then pre-processed before training the classifier using the follo
 * Tokenization
 * Stop word and Special Character removal
 * Lemmatization
-* Bag of Words Creation
 * TF-IDF (Term Frequency - Inverse Document Frequency)
 
 A Naive Bayes Classifier using a Multinomial distribution is trained to 82.2 % accuracy on the 'Twitter US Airline Sentiment' data set. This provides Emotional Sage with the ability to determine the sentiment of Tweets.
@@ -72,7 +71,7 @@ The current status of the web-app is to display pre-existing Twitter conversatio
 Currently the app is in beta testing. Currently the app has been disabled for maintenance but when it is up and running you can find it at www.DatSci.xyz.
 
 
-# 8. Credits
+# 8. Credits:
 
 Created and Developed By: George James Conidis
 

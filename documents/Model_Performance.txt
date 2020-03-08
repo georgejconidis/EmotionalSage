@@ -1,0 +1,36 @@
+The following document contains the performance (confusion matrices) of the saved models trained to determine the sentiment of Tweets from (http://localhost:8888/notebooks/EmotionalSentiment_Data_Analysis_USAirlines_Redownload.ipynb)
+
+Model #1: random_seed = 3, test_size = 0.1
+filename = 'NBC_USAirlines_model_Acc82p24.sav'
+precision    recall  f1-score   support
+
+     0       0.80      0.86      0.82       305
+     1       0.85      0.79      0.82       320
+
+accuracy                           0.82       625
+macro avg       0.82      0.82      0.82       625
+weighted avg       0.82      0.82      0.82       625
+
+[[261  44]
+[ 67 253]]
+0.8224
+The accuracy of labelling all headlines NEGATIVE is: 0.4972
+This model's accuracy is better than the Niave assumption by: 0.3252
+
+
+Model #2: random_seed = 58, test_size = 0.1
+filename = 'NBC_USAirlines_model_Acc82p40.sav'
+precision    recall  f1-score   support
+
+       0       0.77      0.85      0.81       273
+       1       0.87      0.80      0.84       352
+
+accuracy                           0.82       625
+macro avg       0.82      0.83      0.82       625
+weighted avg       0.83      0.82      0.82       625
+
+[[232  41]
+[ 69 283]]
+0.824
+The accuracy of labelling all headlines NEGATIVE is: 0.5020444444444445
+This model's accuracy is better than the Niave assumption by: 0.3219555555555555
